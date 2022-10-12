@@ -1,0 +1,60 @@
+.login {
+  height: calc(100vh - 50px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url("https://sm.ign.com/ign_ap/news/c/cyberpunk-/cyberpunk-2077-every-new-detail-announced-in-night-city-wire_v94y.jpg");
+  background-size: cover;
+  font-family: 'Chakra Petch', sans-serif;
+}
+
+.loginTitle {
+  font-size: 50px;
+  color: #00E6F6;
+}
+
+.loginForm {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.loginForm > label {
+  margin: 10px 0;
+}
+
+.loginInput {
+  padding: 10px;
+  background-color: #00E6F6;
+  border: none;
+  border-radius: 10px;
+}
+
+.loginInput:focus {
+  outline: none;
+}
+
+.loginButton {
+  font-size: 15px;
+  width: 15vh;
+  height: -5vw;
+  margin-top: 15px;
+  cursor: pointer;
+  color: white;
+  padding: 5px;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 0.25em;
+  right: -40px;
+ 
+}
+
+.loginButton.disabled{
+  cursor: not-allowed;
+  background-color: #00E6F6;
+}

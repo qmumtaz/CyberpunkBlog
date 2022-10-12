@@ -1,0 +1,171 @@
+.singlePost {
+  flex: 9;
+}
+
+.singlePostWrapper {
+  padding: 20px;
+  padding-right: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.singlePostImg {
+  width: 100%;
+  height: 300px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.singlePostTitle {
+  text-align: center;
+  margin: 10px;
+  font-size: 28px;
+  font-family: 'Chakra Petch', sans-serif;
+  color: #00E6F6;
+}
+
+.singlePostEdit {
+  float: right;
+  font-size: 16px;
+}
+
+.singlePostIcon {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.singlePostIcon:first-child {
+  color: #00E6F6;
+}
+.singlePostIcon:last-child {
+  color: #FF013C;
+}
+
+.singlePostInfo {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  color: #00E6F6;
+  font-family: 'Chakra Petch', sans-serif;;
+}
+
+.singlePostAuthor{
+  margin-left: 5px;
+}
+
+.singlePostDesc {
+  color: black;
+  font-size: 18px;
+  line-height: 25px;
+  font-family: 'Chakra Petch', sans-serif;
+}
+
+.singlePostDesc::first-letter {
+  margin-left: 20px;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.updatedesc{
+  margin-bottom: 18px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  color: black;
+  font-family: 'Chakra Petch', sans-serif;
+  border:none;
+  width: 97%;
+  height: 97%;
+  resize: both;
+  overflow: auto;
+}
+
+.updateTitle
+{
+  text-align: center;
+  margin: 10px;
+  font-size: 28px;
+  font-family: 'Chakra Petch', sans-serif;
+  color: #00E6F6;
+  border: none;
+  position: center;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+.updatesumbit {
+  position: absolute;
+  bottom: 10px;
+  right: 50px;
+  color: white;
+  background-color: teal;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+button, .updatesumbit::after {
+  width: 90px;
+  height: 50px;
+  font-size: 35px;
+  background: linear-gradient(45deg, transparent 5%, #FF013C 5%);
+  border: 0;
+  color: #fff;
+  letter-spacing: 3px;
+  line-height: 88px;
+  box-shadow: 6px 0px 0px #00E6F6;
+  outline: transparent;
+  position: relative;
+}
+
+
+input[type="text"].cyberpunk, textarea.cyberpunk {
+  width: calc(90% - 30px);
+  border: 30px solid #000;
+  border-left: 5px solid #000;
+  border-right: 5px solid #000;
+  border-bottom: 15px solid #000;
+  clip-path: polygon(0px 25px, 26px 0px, calc(60% - 25px) 0px, 60% 25px, 100% 25px, 100% calc(100% - 10px), calc(100% - 15px) calc(100% - 10px), calc(80% - 10px) calc(100% - 10px), calc(80% - 15px) calc(100% - 0px), 10px calc(100% - 0px), 0% calc(100% - 10px));
+  padding: 12px;
+}
+
+.updatesumbit::after {
+  --slice-0: inset(50% 50% 50% 50%);
+  --slice-1: inset(80% -6px 0 0);
+  --slice-2: inset(50% -6px 20% 0);
+  --slice-3: inset(10% -6px 85% 0);
+  --slice-4: inset(40% -6px 43% 0);
+  --slice-5: inset(80% -6px 5% 0);
+  Content: "立即加入" ;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, transparent 3%, #00E6F6 3%, #00E6F6 5%, #FF013C 5%);
+  text-shadow: -3px -3px 0px #00E6F6, 3px 3px 0px #00E6F6;
+  clip-path: var(--slice-0);
+}
+.updatesumbit:hover::after{
+  animation: 1s glitch;
+  animation-timing-function: steps(2, end);
+}
+@keyframes glitch {
+  0% { clip-path: var(--slice-1); transform: translate(-20px, -10px); }
+  10% { clip-path: var(--slice-3); transform: translate(10px, 10px); }
+  20% { clip-path: var(--slice-1); transform: translate(-10px, 10px); }
+  30% { clip-path: var(--slice-3); transform: translate(0px, 5px); }
+  40% { clip-path: var(--slice-2); transform: translate(-5px, 0px); }
+  50% { clip-path: var(--slice-3); transform: translate(5px, 0px); }
+  60% { clip-path: var(--slice-4); transform: translate(5px, 10px); }
+  70% { clip-path: var(--slice-2); transform: translate(-10px, 10px); }
+  80% { clip-path: var(--slice-5); transform: translate(20px, -10px); }
+  90% { clip-path: var(--slice-1); transform: translate(-10px, 0px); }
+  100% { clip-path: var(--slice-1); transform: translate(0); }
+}

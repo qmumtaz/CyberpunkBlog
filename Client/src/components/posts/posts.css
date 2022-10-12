@@ -1,0 +1,9 @@
+.postsss{
+    flex: 9;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+    justify-content: center;
+    background-color: #fcee09;
+}
+
